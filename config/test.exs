@@ -11,9 +11,6 @@ config :logger, level: :warn
 
 # Configure your database
 config :phx_sqlite_ecto2, PhxSqliteEcto2.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "phx_sqlite_ecto2_test",
-  hostname: "localhost",
-  pool: Ecto.Adapters.SQL.Sandbox
+  adapter: Sqlite.Ecto,
+  database: "myapp_test"
+  # pool: Ecto.Adapters.SQL.Sandbox

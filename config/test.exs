@@ -12,5 +12,6 @@ config :logger, level: :warn
 # Configure your database
 config :phx_sqlite_ecto2, PhxSqliteEcto2.Repo,
   adapter: Sqlite.Ecto,
-  database: "myapp_test"
-  # pool: Ecto.Adapters.SQL.Sandbox
+  database: "myapp_test",
+  pool: Ecto.Adapters.SQL.Sandbox,
+  pool_size: 10

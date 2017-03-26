@@ -37,7 +37,7 @@ defmodule PhxSqliteEcto2.Mixfile do
      {:gettext, "~> 0.11"},
      {:cowboy, "~> 1.0"},
      {:poison, "3.1.0", override: true},
-     {:sqlite_ecto2, "~> 2.0.0-dev.1"}]
+     {:sqlite_ecto2, "~> 2.0.0-dev.2"}]
   end
 
   # Aliases are shortcuts or tasks specific to the current project.
